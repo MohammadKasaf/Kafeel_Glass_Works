@@ -1,17 +1,20 @@
 import { Link } from 'react-router-dom';
 import aboutImage from '../../assets/about.webp';
-import gallery1 from '../../assets/gallery/IMG-20250523-WA0000.jpg';
+import { default as gallery1, default as gallery4 } from '../../assets/gallery/IMG-20250523-WA0000.jpg';
 import gallery2 from '../../assets/gallery/IMG-20250523-WA0001.jpg';
 import gallery3 from '../../assets/gallery/IMG-20250523-WA0002.jpg';
 import product1 from '../../assets/gallery/IMG-20250523-WA0007.jpg';
 import product2 from '../../assets/gallery/IMG-20250523-WA0008.jpg';
 import product3 from '../../assets/gallery/IMG-20250523-WA0009.jpg';
+import product4 from '../../assets/gallery/IMG-20250523-WA0010.jpg';
+
+
 import './Home.css';
 
 const Home = () => {
   return (
     <>
-      {/* About Section */}
+      
       <section className="about-section">
         <div className="about-container">
           <div className="about-header">
@@ -39,13 +42,21 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Products Section */}
+  
       <section className="products-section">
         <div className="section-header">
           <h2 className="section-title">Our Products</h2>
           <p className="section-subtitle">Explore our wide range of glass designs and patterns</p>
         </div>
         <div className="products-grid">
+
+          <div className="product-card">
+            <div className="product-image-container">
+              <img src={product4} alt="Frosted Glass" />
+            </div>
+            <h3>Frosted Glass</h3>
+            <p>Elegant privacy with a modern touch</p>
+          </div>
           <div className="product-card">
             <div className="product-image-container">
               <img src={product1} alt="Frosted Glass" />
@@ -75,7 +86,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Benefits Section */}
+    
       <section className="benefits-section">
         <div className="section-header">
           <h2 className="section-title">Why Choose Us</h2>
@@ -100,13 +111,17 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Gallery Section */}
+      
       <section className="gallery-section">
         <div className="section-header">
           <h2 className="section-title">Gallery</h2>
           <p className="section-subtitle">A glimpse into our recent work</p>
         </div>
         <div className="gallery-teaser">
+           <div className="gallery-item">
+            <img src={gallery4} alt="Glass work 1" />
+            <div className="gallery-overlay"></div>
+          </div>
           <div className="gallery-item">
             <img src={gallery1} alt="Glass work 1" />
             <div className="gallery-overlay"></div>
@@ -123,7 +138,7 @@ const Home = () => {
         <Link to="/gallery" className="btn-primary gallery-btn">View Full Gallery</Link>
       </section>
 
-      {/* Call to Action Section */}
+    
       <section className="cta-section">
         <div className="cta-container">
           <h2>Ready to Transform Your Space?</h2>

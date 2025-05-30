@@ -1,9 +1,7 @@
 import {
   FaEnvelope,
-  FaFacebook,
-  FaInstagram,
   FaMapMarkerAlt,
-  FaPhone,
+  FaPhone
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./Footer.css";
@@ -18,14 +16,7 @@ const Footer = () => {
             30+ years of experience in providing high-quality glass beads and
             coral stones at competitive prices.
           </p>
-          <div className="social-icons">
-            <a href="#" className="social-link">
-              <FaFacebook />
-            </a>
-            <a href="#" className="social-link">
-              <FaInstagram />
-            </a>
-          </div>
+         
         </div>
 
         <div className="footer-section">
@@ -74,7 +65,9 @@ const Footer = () => {
             </li>
             <li>
               <FaPhone className="contact-icon" />
-              <a href="tel:+919876543210">+91 9045497383</a>
+              <a href="tel:+919045497383">+919045497383</a>
+              <FaPhone className="contact-icon" />
+              <a href="tel:+9172499 91666">+917249991666</a>
             </li>
             <li>
               <FaEnvelope className="contact-icon" />
